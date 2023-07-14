@@ -86,3 +86,15 @@ body {
     }
   }
 }
+
+@media (max-width: 560px) {
+  .advice {
+    &__container {
+      width: 320px;
+    }
+
+    &__btn {
+      left: 131px;
+    }
+  }
+}
