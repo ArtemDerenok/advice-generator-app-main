@@ -1,7 +1,88 @@
 @import './variables';
 @import './normalize.scss';
 @import './reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Outfit:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope';
+  font-size: 28px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $DARK_BLUE;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice {
+  &__container {
+    position: relative;
+    width: 540px;
+    min-height: 338px;
+    background-color: $DARK_GRAYISH_BLUE;
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  &__number {
+    text-transform: uppercase;
+    color: $NEON_GREEN;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    color: $LIGHT_CYAN;
+    font-weight: 700;
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+
+  &__line {
+    background-image: url('../assets/images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 16px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $NEON_GREEN;
+    position: absolute;
+    bottom: -30px;
+    left: 241px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 10px 4px $NEON_GREEN;
+      -moz-box-shadow: 0px 0px 10px 4px $NEON_GREEN;
+      box-shadow: 0px 0px 10px 4px $NEON_GREEN;
+    }
+  }
 }
